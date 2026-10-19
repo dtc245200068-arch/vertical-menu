@@ -1,0 +1,62 @@
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu */
+#menu {
+    margin: 30px;
+}
+
+/* Bỏ khoảng cách mặc định của ul */
+#menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Các mục trong menu */
+#menu ul li {
+    list-style: none;
+    position: relative;
+
+    width: 100px;
+    height: 30px;
+
+    padding: 0 20px;
+
+    background-color: black;
+
+    line-height: 30px;
+
+    cursor: pointer;
+}
+
+/* Liên kết */
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+
+    display: block;
+}
+
+/* Đổi màu khi đưa chuột vào */
+#menu ul li:hover {
+    background-color: red;
+}
+
+/* Menu con */
+#menu ul li ul {
+    position: absolute;
+
+    top: 0;
+    left: 140px;
+
+    visibility: hidden;
+}
+
+/* Hiển thị menu con khi hover */
+#menu ul li:hover > ul {
+    visibility: visible;
+}
